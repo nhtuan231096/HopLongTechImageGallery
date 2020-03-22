@@ -26,7 +26,7 @@
 	  @foreach($images as $key=>$image)
 	  <?php $active = $key == 0 ? "active" : ""; ?>
       <div class="item {{$active}}">
-        <img src="{{url('uploads/image-gallery')}}/{{$image}}" alt="{{$image}}" style="width:100%;height: 100%">
+        <img src="{{url('uploads/image-gallery')}}/{{$image}}" alt="{{$image}}" style="width:900px;height: 900px">
         <div class="carousel-caption">
           <!-- <h3>Los Angeles</h3> -->
           <!-- <p>LA is always so much fun!</p> -->

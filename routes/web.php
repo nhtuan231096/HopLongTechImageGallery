@@ -11,6 +11,7 @@
 |
 */
 Route::group(['prefix'=>'admin','namespace'=>'Admin','middleware'=>'admin'],function(){
+		Route::get('/','GalleryController@index')->name('gallery');
 		Route::get('image-gallery','GalleryController@index')->name('gallery');
 		Route::get('import-image-gallery','GalleryController@gallery_import_view')->name('gallery_import');
 		Route::post('import-image-gallery','GalleryController@gallery_import')->name('gallery_import');

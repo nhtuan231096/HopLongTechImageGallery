@@ -29,7 +29,7 @@ class AdminController extends Controller
 				return view('admin.index');
 			}
 			else{
-				return redirect()->back()->with('error','Đăng nhập không thành công');
+				return redirect()->route('gallery')->with('error','Đăng nhập không thành công');
 			}
 		}
 		else
